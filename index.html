@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f4f1ea">
+  <title>Beyond the Binary — Personality in Patterns</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="topbar" aria-label="Story navigation">
+    <a class="brand" href="#intro">PATTERN / 01</a>
+    <div class="progress" aria-label="Story progress"><span id="progress-bar"></span></div>
+    <button class="sound-toggle" id="top-note" type="button">ABOUT THE DATA <span aria-hidden="true">↗</span></button>
+  </nav>
+
+  <main>
+    <section class="hero" id="intro">
+      <div class="hero-kicker">A DATA STORY / 2,900 RESPONSES</div>
+      <h1>Beyond the<br><em>binary.</em></h1>
+      <p class="hero-deck">What everyday behaviors can tell us about introversion, extroversion—and the fuzzy space between.</p>
+      <div class="scroll-cue"><span></span> SCROLL TO EXPLORE</div>
+      <div class="hero-orbit orbit-one"></div>
+      <div class="hero-orbit orbit-two"></div>
+      <div class="hero-dot dot-one"></div>
+      <div class="hero-dot dot-two"></div>
+      <div class="hero-dot dot-three"></div>
+    </section>
+
+    <section class="story" id="story">
+      <div class="story-grid">
+        <div class="visual-column">
+          <div class="sticky-visual" aria-live="polite">
+            <div class="chart-head">
+              <p id="chart-kicker">RESPONDENT BALANCE</p>
+              <p id="chart-number">n = 2,900</p>
+            </div>
+            <div id="chart" class="chart" role="img" aria-label="Personality survey visualization"></div>
+            <p class="chart-caption" id="chart-caption">Exact duplicate rows: 388 (13.38%). They are shown unless otherwise noted.</p>
+          </div>
+        </div>
+        <aside class="steps" aria-label="Scrollytelling sections">
+          <article class="step active" data-step="0">
+            <p class="step-number">01 / THE LABEL</p>
+            <h2>A sample split almost evenly.</h2>
+            <p>The behavior survey includes <strong>2,900 responses</strong>: 1,491 labeled extrovert and 1,409 labeled introvert.</p>
+            <div class="mini-stat">
+              <span>51.4%</span>
+              <small>EXTROVERT</small>
+            </div>
+          </article>
+
+          <article class="step" data-step="1">
+            <p class="step-number">02 / THE EVERYDAY</p>
+            <h2>The clearest difference is time.</h2>
+            <p>Introverts report spending more time alone and less time in public-facing activities. On average, the two groups live different social rhythms.</p>
+            <div class="insight-card">
+              <span class="insight-arrow">↗</span>
+              <p>Time alone:<br><strong>7.1 vs. 2.1 scale units</strong></p>
+              <small>INTROVERT / EXTROVERT</small>
+            </div>
+          </article>
+
+          <article class="step" data-step="2">
+            <p class="step-number">03 / SOCIAL COST</p>
+            <h2>Socializing can feel different.</h2>
+            <p>In this sample, stage fear and feeling drained after socializing are strongly associated with the introvert label.</p>
+            <div class="impact-line"><span>92%</span><p>of introverts report<br>feeling drained</p></div>
+          </article>
+
+          <article class="step" data-step="3">
+            <p class="step-number">04 / BEYOND ONE LABEL</p>
+            <h2>Personality is a continuum.</h2>
+            <p>In a separate MIES sample, 7,188 records include a self-identification item. Among 7,163 mapped labels, a shared item score still shows substantial overlap—not a hard border.</p>
+            <div class="legend-row">
+              <span><i class="swatch intro"></i>Introvert</span>
+              <span><i class="swatch neither"></i>Neither</span>
+              <span><i class="swatch extra"></i>Extrovert</span>
+            </div>
+          </article>
+
+          <article class="step" data-step="4">
+            <p class="step-number">05 / CONTEXT MATTERS</p>
+            <h2>A pattern, not a diagnosis.</h2>
+            <p>This is a descriptive story across separate online surveys. It cannot establish causality or represent every person. Labels, age, and country fields vary in quality.</p>
+            <button class="return-button" id="return-button" type="button">RETURN TO THE BEGINNING ↑</button>
+          </article>
+        </aside>
+      </div>
+    </section>
+
+    <section class="closing" id="closing">
+      <p class="closing-kicker">THE TAKEAWAY</p>
+      <h2>Two labels.<br><em>Many ways to be.</em></h2>
+      <p>Use these patterns to ask better questions—not to put yourself in a box.</p>
+      <div class="source-grid">
+        <div>
+          <span>SOURCES</span>
+          <p>Personality behavior survey · BIG5 · IPIP-FFM · MIES</p>
+        </div>
+        <div>
+          <span>METHOD</span>
+          <p>Descriptive comparison across separate, non-linked samples</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="data-dialog">
+    <button class="dialog-close" id="dialog-close" type="button" aria-label="Close">×</button>
+    <p class="dialog-kicker">ABOUT THE DATA</p>
+    <h2>A note on interpretation</h2>
+    <p>The source data are survey responses from separate online samples. The behavior dataset has no demographic fields and 388 exact duplicate rows. The supplemental datasets should not be pooled with respondent-level records.</p>
+    <p>These findings describe patterns in recorded responses. They do not diagnose personality, establish causality, or represent the population.</p>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
